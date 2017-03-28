@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <BorderPane prefHeight="500.0" prefWidth="790.0">
+         <top>
+            <Label prefHeight="42.0" prefWidth="479.0" text="Library Management System" BorderPane.alignment="BOTTOM_CENTER">
+               <padding>
+                  <Insets top="3.0" />
+               </padding>
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+         </top>
+         <bottom>
+            <Pane maxHeight="-Infinity" prefHeight="383.0" prefWidth="790.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="50.0" prefWidth="790.0" BorderPane.alignment="TOP_CENTER">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <children>
+                  <Button fx:id="btnAddMember" layoutX="29.0" layoutY="10.0" mnemonicParsing="false" onAction="#loadPane" text="Button" />
+                  <Button layoutX="114.0" layoutY="10.0" mnemonicParsing="false" text="Button" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

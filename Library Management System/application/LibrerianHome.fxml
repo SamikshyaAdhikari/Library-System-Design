@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label layoutX="23.0" layoutY="1.0" prefHeight="104.0" prefWidth="528.0" text="    Library Managment System">
+         <font>
+            <Font name="Arial Bold" size="35.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCheckOut" layoutX="161.0" layoutY="129.0" mnemonicParsing="false" onAction="#btnbtnCheckOutClicked" prefHeight="39.0" prefWidth="275.0" text="Check out Book" />
+      <Button fx:id="btnExit" layoutX="161.0" layoutY="312.0" mnemonicParsing="false" onAction="#btnExitButtonClicked" prefHeight="39.0" prefWidth="275.0" text="Exit" />
+      <Button fx:id="btnLogOut" layoutX="161.0" layoutY="224.0" mnemonicParsing="false" onAction="#btnLogOutButtonClicked" prefHeight="39.0" prefWidth="275.0" text="Log Out" />
+   </children>
+</Pane>

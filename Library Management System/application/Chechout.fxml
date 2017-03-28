@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CheckOutController">
+   <children>
+      <Pane layoutX="4.0" layoutY="-22.0" prefHeight="475.0" prefWidth="525.0">
+         <children>
+            <Label layoutX="137.0" layoutY="28.0" text="Check Out Details">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="77.0" layoutY="88.0" text="Member ID" />
+            <TextField fx:id="txtMemberID" layoutX="163.0" layoutY="83.0" />
+            <Label layoutX="77.0" layoutY="147.0" text="Book ISBN" />
+            <TextField fx:id="txtBookISBN" layoutX="163.0" layoutY="142.0" />
+            <Button fx:id="btnSubmit" layoutX="164.0" layoutY="183.0" mnemonicParsing="false" onAction="#btnSubmitButtonClicked" prefHeight="31.0" prefWidth="90.0" text="Check Out" />
+            <Label fx:id="lblMessage" layoutX="167.0" layoutY="223.0" prefHeight="21.0" prefWidth="345.0" />
+            <Button fx:id="btnCancel" layoutX="272.0" layoutY="183.0" mnemonicParsing="false" onAction="#btnExitButtonClicked" prefHeight="31.0" prefWidth="75.0" text="Cancel" />
+            <TableView fx:id="tblCheckout" layoutX="-2.0" layoutY="251.0" prefHeight="226.0" prefWidth="529.0">
+              <columns>
+                 <TableColumn fx:id="MemberID" prefWidth="123.0" text="Member ID" /> 
+                  <TableColumn fx:id="ISBN" prefWidth="83.0" text="ISBN" />
+                <TableColumn fx:id="colCheckoutDate" prefWidth="118.0" text="CheckOut Date" />
+                <TableColumn fx:id="colDueDate" prefWidth="83.0" text="Due Date" />
+                  <TableColumn fx:id="colCopyNumber" prefWidth="121.0" text="Copy Number" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
